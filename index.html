@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Telc B1 – Planen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fdfdfd;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .aufgabe,
+    .thema-container,
+    .redemittel-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto 4rem auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .thema-container {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .thema-container.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .thema-titel {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+
+    .szenario ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1.2rem 0;
+    }
+
+    .szenario ul li {
+      margin-bottom: 0.3rem;
+    }
+
+    .dialog-button {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 1rem;
+    }
+
+    .dialog-button:hover {
+      background-color: #333;
+    }
+
+    .dialog {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f4f4f4;
+      border-left: 3px solid #ccc;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+
+    .redemittel-block {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    .redemittel-toggle {
+      width: 100%;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .redemittel-toggle:hover {
+      background-color: #eee;
+    }
+
+    .redemittel-content {
+      display: none;
+      background: #fff;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .redemittel-content ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .redemittel-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .aufgabe,
+      .thema-container,
+      .redemittel-container {
+        padding: 1rem;
+      }
+
+      .dialog-button {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Telc B1 – Mündliche Prüfung: gemeinsam etwas Planen</h1>
+
+  <div class="aufgabe">
+    <strong>Aufgabenstellung:</strong><br><br>
+    Überlegen Sie zusammen mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner, was zu tun ist. Tauschen Sie Ideen aus und diskutieren Sie darüber. Einigen Sie sich zum Schluss. Sie haben sich schon einen Zettel mit Notizen gemacht.
+  </div>
+
+  <div class="thema-container">
+    <div class="thema-titel">1. Fernsehabend für gemeinsame Freunde</div>
+    <div class="szenario">
+      Sie möchten wieder einmal einen Fernsehabend für gemeinsame Freunde organisieren.
+      <ul>
+        <li>Bei wem?</li>
+        <li>Wann?</li>
+        <li>Film oder Talent-Show?</li>
+        <li>Essen und Getränke</li>
+        <li>…</li>
+      </ul>
+    </div>
+    <button class="dialog-button">Beispieldialog anzeigen</button>
+    <div class="dialog">Person A:
+Also, wir wollten ja mal wieder einen Fernsehabend für unsere Freunde machen. Ich finde, das ist eine schöne Idee, um gemeinsam Zeit zu verbringen. Was meinst du?
+
+Person B:
+Ja, das finde ich auch. Zusammen fernsehen macht immer Spaß. Wir sollten das unbedingt bald machen. Hast du schon eine Idee, wo wir das machen könnten?
+
+Person A:
+Ich würde vorschlagen, dass wir es bei dir machen. Du hast ein großes Wohnzimmer und einen bequemen Fernseher. Wäre das für dich okay?
+
+Person B:
+Klar, das ist kein Problem. Ich bereite gerne alles vor. Wollen wir dann am Wochenende einen Termin finden?
+
+Person A:
+Ja, das passt gut. Ich denke, der Samstagabend ist perfekt, da sind alle meistens frei. Was hältst du davon?
+
+Person B:
+Samstag klingt gut. Dann haben wir genug Zeit für die Vorbereitung. Um wie viel Uhr wollen wir anfangen?
+
+Person A:
+Ich würde sagen, so gegen 19 Uhr. Dann kann jeder vorher noch in Ruhe essen oder duschen. Oder ist dir eine andere Uhrzeit lieber?
+
+Person B:
+Nein, 19 Uhr passt perfekt. Jetzt die wichtigste Frage: Schauen wir lieber einen Film oder eine Talent-Show?
+
+Person A:
+Ich bin ehrlich gesagt für einen Film. Vielleicht eine Komödie, damit wir alle zusammen lachen können. Wie findest du das?
+
+Person B:
+Gute Idee! Komödien sind immer beliebt. Ich könnte auch einen Film vorschlagen – ich habe „Das perfekte Geheimnis“ auf DVD. Kennst du den?
+
+Person A:
+Ja, der ist echt gut! Den können wir auf jeden Fall nehmen. Und was machen wir mit Essen und Getränken?
+
+Person B:
+Ich könnte Pizza bestellen oder selbst welche machen. Dazu vielleicht ein paar Snacks wie Chips und Salzstangen. Was bringst du mit?
+
+Person A:
+Ich bringe Popcorn und Cola mit. Vielleicht auch ein paar Süßigkeiten. Findest du das okay?
+
+Person B:
+Ja, das ist super. Dann haben wir genug Auswahl. Wie viele Leute wollen wir eigentlich einladen?
+
+Person A:
+Ich denke, sechs bis acht Personen sind ideal. So wird es nicht zu laut, und jeder hat Platz. Wen sollen wir einladen?
+
+Person B:
+Ich würde gerne Anna, Tim, Julia und Markus einladen. Das sind unsere engsten Freunde. Hast du noch jemanden im Kopf?
+
+Person A:
+Vielleicht auch Lisa, wenn sie Zeit hat. Ich schreibe ihr später. Sollen wir eine WhatsApp-Gruppe machen?
+
+Person B:
+Gute Idee! Dann können wir alle Infos auf einmal schicken. Willst du die Gruppe erstellen oder soll ich das machen?
+
+Person A:
+Mach du das bitte, du hast alle Nummern. Ich sende dir noch ein paar Bilder vom Film als Vorschau. Ist das in Ordnung?
+
+Person B:
+Ja, sehr gern. Dann ist alles geklärt. Ich freue mich schon auf unseren Fernsehabend. Du auch?
+
+Person A:
+Auf jeden Fall! Es wird bestimmt ein schöner Abend mit guter Stimmung!
+</div>
+  </div>
+
+  <div class="thema-container">
+    <div class="thema-titel">2. Familientreffen der Nachbarin planen</div>
+    <div class="szenario">
+      Ihre Nachbarin plant ein Familientreffen, und Sie möchten ihr helfen.
+      <ul>
+        <li>Wann?</li>
+        <li>Wie viele Personen?</li>
+        <li>Tische und Stühle</li>
+        <li>Übernachtung</li>
+        <li>…</li>
+      </ul>
+    </div>
+    <button class="dialog-button">Beispieldialog anzeigen</button>
+    <div class="dialog">Person A:
+Unsere Nachbarin hat ja erzählt, dass sie bald ein großes Familientreffen plant. Ich finde, wir sollten ihr helfen, weil sie das alles alleine nicht schafft. Was meinst du dazu?
+
+Person B:
+Ja, ich finde auch, dass wir sie unterstützen sollten. Sie ist immer so nett zu uns, da ist es doch selbstverständlich. Wollen wir zuerst klären, wann das Treffen stattfindet?
+
+Person A:
+Ich glaube, sie hat gesagt, es soll nächstes Wochenende stattfinden, also am Samstag. Das passt doch gut, oder?
+
+Person B:
+Samstag klingt gut. Da haben wir beide Zeit und können den ganzen Tag helfen. Weißt du, wie viele Leute kommen sollen?
+
+Person A:
+Sie meinte, es werden etwa 20 Personen erwartet. Das ist wirklich viel. Meinst du, das passt alles in ihren Garten?
+
+Person B:
+Im Garten wird’s ein bisschen eng, aber vielleicht kann man einen Teil auch im Wohnzimmer machen. Wichtig ist, dass genug Tische und Stühle da sind. Hast du da vielleicht etwas zu Hause?
+
+Person A:
+Ja, ich habe einen großen Klapptisch und sechs Gartenstühle. Die könnten wir mitbringen. Wie sieht’s bei dir aus?
+
+Person B:
+Ich habe vier Klappstühle und einen kleinen Beistelltisch. Zusammen reicht das schon fast. Sollen wir auch bei anderen Nachbarn nachfragen?
+
+Person A:
+Gute Idee. Vielleicht können wir bei Familie Neumann noch ein paar Stühle leihen. Ich frage sie morgen. Was ist mit Übernachtung? Kommen auch Gäste von weiter weg?
+
+Person B:
+Ja, ein paar Familienmitglieder kommen wohl aus Hamburg. Sie hat gesagt, sie sucht noch zwei Schlafplätze. Vielleicht kann jemand bei mir im Gästezimmer übernachten. Wie ist es bei dir?
+
+Person A:
+Ich habe ein Schlafsofa im Wohnzimmer. Das können zwei Personen nutzen. Ich sag ihr Bescheid. Wollen wir ihr auch beim Kochen helfen?
+
+Person B:
+Ja, unbedingt. Ich könnte zum Beispiel einen Kartoffelsalat machen und ein Blech Kuchen backen. Hast du auch eine Idee?
+
+Person A:
+Ich mache gern Nudelsalat und bringe Brötchen mit. Außerdem kann ich ihr beim Einkaufen helfen. Sollen wir zusammen eine Einkaufsliste schreiben?
+
+Person B:
+Gute Idee. Dann vergessen wir nichts. Ich bringe Papier und Stift mit, und wir setzen uns morgen mit ihr zusammen. Ist das okay?
+
+Person A:
+Perfekt! Ich glaube, mit unserer Hilfe wird das Familientreffen richtig schön. Ich freue mich schon darauf!
+
+Person B:
+Ich auch. Schön, dass wir gemeinsam helfen können!
+</div>
+  </div>
+
+<div class="thema-container">
+  <div class="thema-titel">3. Kaffee und Kuchen mit der Kursgruppe</div>
+  <div class="szenario">
+    Sie möchten Ihre Kursgruppe nach dem Unterricht zu Kaffee und Kuchen einladen.
+    <ul>
+      <li>verschiedene Kuchen backen</li>
+      <li>Kaffee und Tee einkaufen</li>
+      <li>Tische decken</li>
+      <li>Ort und Zeit</li>
+      <li>Dekoration</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Ich finde, es wäre schön, unsere Kursgruppe einmal zu Kaffee und Kuchen einzuladen. So könnten wir uns alle besser kennenlernen. Was denkst du?
+
+Person B:
+Ja, das ist eine tolle Idee! Gerade nach dem Unterricht ist das eine schöne Gelegenheit zum Reden und Entspannen. Wollen wir gemeinsam etwas vorbereiten?
+
+Person A:
+Auf jeden Fall. Ich dachte, wir könnten verschiedene Kuchen backen. Ich mache gern einen Apfelkuchen. Hast du auch ein Lieblingsrezept?
+
+Person B:
+Ja, ich kann einen Schokoladenkuchen machen. Der kommt immer gut an. Wollen wir vielleicht noch einen dritten Kuchen planen?
+
+Person A:
+Gute Idee! Vielleicht können wir jemanden aus dem Kurs fragen, ob er oder sie noch etwas mitbringen möchte. Und was ist mit Getränken?
+
+Person B:
+Ich würde vorschlagen, dass wir Kaffee und Tee einkaufen. Ich kann mich darum kümmern. Hast du eine Idee, wie viel wir brauchen?
+
+Person A:
+Bei 12 Personen würde ich sagen: zwei große Kannen Kaffee und eine mit Tee. Ich bringe auch noch Zucker und Milch mit. Wollen wir auch die Tische schön decken?
+
+Person B:
+Ja, das ist wichtig für die Atmosphäre. Ich habe eine schöne Tischdecke und ein paar Servietten. Hast du vielleicht Blumen für den Tisch?
+
+Person A:
+Ich kann kleine Vasen mitbringen und ein paar Frühlingsblumen vom Markt holen. Das sieht bestimmt toll aus. Wo wollen wir das Treffen eigentlich machen?
+
+Person B:
+Ich denke, der Kursraum ist zu klein. Vielleicht können wir den Aufenthaltsraum in der Schule nutzen. Ich frage morgen den Lehrer. Ist das in Ordnung?
+
+Person A:
+Ja, das passt. Und wann soll das Ganze stattfinden? Vielleicht nächsten Donnerstag nach dem Unterricht?
+
+Person B:
+Donnerstag klingt gut. Da haben die meisten Zeit. Wollen wir dann gegen 15:30 Uhr anfangen?
+
+Person A:
+Das ist perfekt. Dann haben wir noch Zeit, alles in Ruhe vorzubereiten. Sollen wir auch eine kleine Einladung machen?
+
+Person B:
+Gute Idee! Ich mache ein Plakat und hänge es im Kursraum auf. Möchtest du etwas darauf schreiben?
+
+Person A:
+Gerne! Ich schreibe: „Herzliche Einladung zu Kaffee und Kuchen – Donnerstag nach dem Kurs, im Aufenthaltsraum!“ Klingt das gut?
+
+Person B:
+Ja, das klingt freundlich und klar. Ich freue mich schon sehr auf den Nachmittag!
+
+Person A:
+Ich auch! Das wird sicher ein schönes gemeinsames Erlebnis!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">4. Ein schönes Wiedersehen</div>
+  <div class="szenario">
+    Eine Freundin kommt bald zu Besuch. Sie haben sie lange nicht gesehen und möchten einen schönen Abend organisieren.
+    <ul>
+      <li>Essen und Getränke</li>
+      <li>Ort und Zeit</li>
+      <li>Musik oder Spiele</li>
+      <li>Einladung weiterer Freunde</li>
+      <li>Dekoration</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Ich freue mich so, dass unsere gemeinsame Freundin bald kommt! Wir haben sie lange nicht gesehen. Ich finde, wir sollten einen besonderen Abend für sie machen. Was meinst du?
+
+Person B:
+Das ist eine tolle Idee. Ich habe sie auch so lange nicht mehr gesehen. Was sollen wir alles planen? Wollen wir zuerst überlegen, was wir essen und trinken möchten?
+
+Person A:
+Gerne! Ich würde vorschlagen, dass wir selbst etwas kochen. Salate, vielleicht etwas Warmes. Ich mache gerne einen Nudelsalat. Möchtest du auch etwas beisteuern?
+
+Person B:
+Klar! Ich kann Fingerfood vorbereiten, zum Beispiel Mini-Pizzas oder Blätterteigrollen. Und bei den Getränken? Was schlägst du vor?
+
+Person A:
+Ich bringe ein paar Säfte und vielleicht etwas Sekt mit. Kaffee und Tee wären auch gut. Wollen wir das Ganze bei mir machen?
+
+Person B:
+Ja, bei dir wäre es perfekt. Du hast genug Platz und einen großen Tisch. Wann passt es dir am besten?
+
+Person A:
+Wie wäre es am Freitagnachmittag gegen 18 Uhr? Dann können wir alles vorher vorbereiten, und sie kommt ja am Nachmittag an. Ist das für dich okay?
+
+Person B:
+Perfekt, Freitag passt. Wollen wir auch Musik oder Spiele einplanen, damit es nicht langweilig wird?
+
+Person A:
+Auf jeden Fall! Ich erstelle eine kleine Playlist mit entspannter Musik. Hast du vielleicht ein Spiel, das wir in der Gruppe spielen können?
+
+Person B:
+Ja, ich habe ein Gesellschaftsspiel, das gut für kleine Gruppen ist. Wollen wir noch andere Freunde einladen?
+
+Person A:
+Ich denke, zwei oder drei gute Freunde würden gut passen. Nicht zu viele, damit es persönlich bleibt. Wen würdest du vorschlagen?
+
+Person B:
+Vielleicht Julia und Markus? Sie kennt die beiden auch gut. Ich kann ihnen schreiben. Sollen wir auch noch ein bisschen dekorieren?
+
+Person A:
+Auf jeden Fall, das bringt Stimmung! Ich hole ein paar Kerzen und Lichterketten mit. Vielleicht noch ein paar Blumen?
+
+Person B:
+Gute Idee! Ich schaue, ob ich noch ein paar Servietten und Luftballons finde. Dann ist alles perfekt. Machen wir eine kleine Einladung oder sagen wir es einfach persönlich?
+
+Person A:
+Ich schicke allen eine persönliche Nachricht per WhatsApp rechtzeitig. Es soll entspannt bleiben. Ich freue mich schon total auf den Abend!
+
+Person B:
+Ich auch! Es wird sicher ein unvergesslicher Abend für sie – und für uns alle!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">5. Nachbarschaftsstraßenfest</div>
+  <div class="szenario">
+    In Ihrer Straße soll bald ein Straßenfest stattfinden. Sie möchten etwas dazu beitragen.
+    <ul>
+      <li>Essen und Getränke</li>
+      <li>Musik oder Spiele</li>
+      <li>Wer macht was?</li>
+      <li>Uhrzeit und Ort</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Hast du gehört? In unserer Straße soll bald ein Straßenfest stattfinden! Ich finde, wir sollten unbedingt mitmachen und etwas organisieren. Was denkst du?
+
+Person B:
+Ja, ich habe auch davon gehört. Es ist eine tolle Gelegenheit, unsere Nachbarn besser kennenzulernen. Ich bin auf jeden Fall dabei. Was wollen wir machen?
+
+Person A:
+Ich dachte, wir könnten zusammen einen kleinen Stand mit Essen und Getränken vorbereiten. Ich backe gern Kuchen. Hast du auch eine Idee?
+
+Person B:
+Ich könnte Brezeln oder kleine Pizzastücke machen. Und bei den Getränken – sollen wir Wasser und Limo besorgen?
+
+Person A:
+Ja, das ist gut. Ich bringe Limo und Wasser mit, du kannst vielleicht ein paar Becher und Servietten mitnehmen. Was ist mit Musik oder Spielen?
+
+Person B:
+Musik ist wichtig für die Stimmung. Ich könnte meine Lautsprecher mitbringen und eine Playlist erstellen. Wollen wir auch etwas für Kinder vorbereiten?
+
+Person A:
+Das wäre super! Vielleicht ein kleines Spiel wie Dosenwerfen oder Seifenblasen. Ich kann ein paar Materialien besorgen. Wer übernimmt was?
+
+Person B:
+Ich schreibe uns eine kleine Aufgabenliste: Du machst den Kuchen und die Spiele, ich bringe Snacks, Getränke und Musik. Ist das okay für dich?
+
+Person A:
+Perfekt! Und wann genau soll das Fest stattfinden?
+
+Person B:
+Ich glaube, es soll nächsten Samstag ab 16 Uhr losgehen. Passt das auch für dich?
+
+Person A:
+Ja, das ist ein guter Zeitpunkt. Wollen wir schon ab 14 Uhr aufbauen?
+
+Person B:
+Gute Idee. Dann haben wir genug Zeit. Und wo genau machen wir unseren Stand – vor meinem Haus oder lieber auf dem großen Platz an der Ecke?
+
+Person A:
+Der Platz an der Ecke wäre besser – da ist mehr Platz. Wollen wir auch ein bisschen dekorieren?
+
+Person B:
+Unbedingt! Ich bringe bunte Wimpel und Luftballons mit. Du hast doch auch noch ein paar Lichterketten, oder?
+
+Person A:
+Ja, die nehme ich mit. Ich freue mich schon sehr – das wird bestimmt ein tolles Straßenfest!
+
+Person B:
+Ich auch! Schön, dass wir das zusammen machen.
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">6. Ein Stand auf dem Flohmarkt</div>
+  <div class="szenario">
+    Sie möchten zusammen an einem Flohmarkt teilnehmen und einen gemeinsamen Stand organisieren.
+    <ul>
+      <li>Wann und wo?</li>
+      <li>Was verkaufen?</li>
+      <li>Wer bringt was mit?</li>
+      <li>Preise und Wechselgeld</li>
+      <li>Tisch, Decke, Schilder</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Ich habe gesehen, dass nächste Woche ein Flohmarkt im Stadtpark stattfindet. Ich finde, wir könnten zusammen einen Stand machen. Ich habe viele Sachen zu Hause. Was meinst du?
+
+Person B:
+Das ist eine tolle Idee! Ich habe auch Kleidung und ein paar Bücher, die ich verkaufen möchte. Wollen wir uns anmelden?
+
+Person A:
+Ja, ich habe gelesen, dass man sich bis Montag anmelden muss. Der Flohmarkt ist am Samstag ab 9 Uhr. Passt dir das?
+
+Person B:
+Ja, Samstag ist perfekt. Dann sollten wir früh da sein, um alles aufzubauen. Was wollen wir denn genau verkaufen?
+
+Person A:
+Ich habe Kinderkleidung, ein paar Brettspiele und eine alte Lampe. Denkst du, das könnte interessant sein?
+
+Person B:
+Auf jeden Fall! Ich bringe Romane, DVDs und ein paar Taschen mit. Wollen wir die Sachen nach Themen sortieren?
+
+Person A:
+Ja, das ist übersichtlicher. Ich kann Kisten mitbringen. Wer kümmert sich um den Tisch?
+
+Person B:
+Ich habe einen Klapptisch, den ich mitbringen kann. Du könntest vielleicht eine Tischdecke organisieren?
+
+Person A:
+Kein Problem, ich habe eine große bunte Decke. Wollen wir auch Preisschilder machen?
+
+Person B:
+Ja, das ist wichtig. Ich schreibe kleine Zettel mit Preisen. Was machen wir mit dem Wechselgeld?
+
+Person A:
+Ich bringe eine Geldkassette und ein bisschen Kleingeld mit – Münzen und kleine Scheine. Denkst du, das reicht?
+
+Person B:
+Ja, das sollte passen. Wollen wir auch ein Schild machen mit unserem Namen oder „Alles muss raus“?
+
+Person A:
+Gute Idee! Ich bastle heute Abend ein großes Schild. Brauchen wir noch etwas?
+
+Person B:
+Vielleicht ein paar Tüten für die Käufer. Ich habe zu Hause noch viele Papiertüten. Ich bringe sie einfach mit.
+
+Person A:
+Perfekt! Ich freue mich schon – das wird sicher Spaß machen und wir schaffen Platz zu Hause!
+
+Person B:
+Und vielleicht verdienen wir sogar ein bisschen Geld! Schön, dass wir das zusammen machen!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">7. Neue Blumen für den Balkon</div>
+  <div class="szenario">
+    Ihre Nachbarin möchte ihren Balkon mit neuen Blumen gestalten. Sie möchten ihr helfen.
+    <ul>
+      <li>Wann? (z. B. Frühling, Wochenende)</li>
+      <li>Wer hilft? (Nachbarn, Familie, Freunde)</li>
+      <li>Welche Blumen? Wo kaufen? (Gartencenter, Liste)</li>
+      <li>Transport? (Auto, Einkaufswagen, zu Fuß)</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Hallo! Unsere Nachbarin hat mich gestern gefragt, ob wir ihr helfen können, neue Blumen auf ihrem Balkon zu pflanzen. Sie will alles ein bisschen schöner machen.
+
+Person B:
+Oh, das ist eine schöne Idee! Ich helfe gerne. Aber wir müssen ein bisschen planen. Wann sollen wir das machen?
+
+Person A:
+Ich denke, am besten im Frühling. Da ist es warm genug. Vielleicht nächstes Wochenende? Der Wetterbericht sagt: sonnig und 18 Grad.
+
+Person B:
+Perfekt! Samstag ist gut. Dann haben wir den ganzen Tag Zeit. Und wer hilft noch mit?
+
+Person A:
+Ich habe schon mit Frau Berger gesprochen – sie wohnt im Erdgeschoss. Sie hat auch Lust zu helfen. Und vielleicht kann mein Bruder kommen. Der hat ein bisschen Erfahrung mit Pflanzen.
+
+Person B:
+Super! Je mehr Leute, desto besser. Jetzt die Frage: Welche Blumen wollen wir pflanzen?
+
+Person A:
+Die Nachbarin mag bunte Blumen. Sie möchte Geranien, Petunien und vielleicht auch ein paar Kräuter – wie Basilikum und Minze.
+
+Person B:
+Dann sollten wir eine Liste machen: Geranien, Petunien, Basilikum, Minze... brauchen wir auch Erde, Blumentöpfe und Handschuhe?
+
+Person A:
+Ja, auf jeden Fall. Vielleicht auch kleine Schaufeln. Und wo kaufen wir das alles?
+
+Person B:
+Ich kenne ein gutes Gartencenter am Stadtrand. Da gibt es eine große Auswahl und gute Preise.
+
+Person A:
+Okay, dann fahren wir am Freitag dorthin und kaufen alles. Aber wie transportieren wir das?
+
+Person B:
+Ich kann mein Auto nehmen. Ich habe einen großen Kofferraum – da passt alles rein.
+
+Person A:
+Sehr gut. Ich komme mit und helfe beim Tragen. Und am Samstag um 10 Uhr treffen wir uns bei der Nachbarin?
+
+Person B:
+Ja, das ist perfekt. Ich bringe auch Wasser und ein paar Kekse für alle mit. Dann wird’s ein schöner Tag!
+
+Person A:
+Oh ja! Und ich bringe Musik mit – ein kleines Radio. Dann macht das Pflanzen noch mehr Spaß.
+
+Person B:
+Sehr gute Idee! Ich freue mich schon. Es wird bunt und gemütlich auf ihrem Balkon!
+
+Person A:
+Ich auch. Schön, dass wir zusammen helfen. So macht Nachbarschaft richtig Spaß!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">8. Eine gewonnene Schiffsreise</div>
+  <div class="szenario">
+    Sie haben gemeinsam eine Schiffsreise im Wert von 3000 € gewonnen. Planen Sie die Reise.
+    <ul>
+      <li>Wohin?</li>
+      <li>Wann?</li>
+      <li>Wie lange?</li>
+      <li>Visa, Pässe, Koffer packen</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Ich kann es immer noch nicht glauben – wir haben wirklich diese Schiffsreise gewonnen! 3000 Euro, das ist unglaublich! Jetzt müssen wir nur noch planen, wohin wir fahren wollen.
+
+Person B:
+Ich freue mich auch total! Wir sollten die Chance nutzen und etwas Besonderes machen. Wie wäre es mit einer Kreuzfahrt im Mittelmeer? Ich wollte schon immer mal nach Spanien, Italien und Griechenland.
+
+Person A:
+Das klingt perfekt! Dort ist das Wetter toll, das Essen lecker, und man kann viel sehen. Dann entscheiden wir uns für das Mittelmeer. Und wann sollen wir fahren?
+
+Person B:
+Ich würde sagen, in den Sommerferien. Vielleicht Ende Juli? Dann ist es warm, und wir haben genug Zeit, uns vorzubereiten.
+
+Person A:
+Ende Juli passt gut. Wie lange wollen wir fahren? Ich finde, zehn Tage wären super – nicht zu kurz und nicht zu lang.
+
+Person B:
+Einverstanden. Jetzt zur Organisation: Brauchen wir ein Visum?
+
+Person A:
+Für EU-Länder brauchen wir kein Visum, aber unsere Pässe müssen mindestens noch sechs Monate gültig sein. Ich schaue heute noch nach meinem Pass. Du auch?
+
+Person B:
+Ja, ich kontrolliere das heute Abend. Und was nehmen wir mit? Wir müssen Koffer packen – mit Sommersachen, Badesachen, aber auch etwas Elegantes fürs Abendessen an Bord.
+
+Person A:
+Stimmt. Ich mache eine Liste: Badeanzug, Sonnencreme, Sonnenbrille, Flip-Flops, leichte Kleidung, aber auch ein Kleid oder Hemd für das Captain’s Dinner. Und Medikamente nicht vergessen!
+
+Person B:
+Gute Idee. Und was wollen wir an Bord machen? Ich habe gelesen, dass es oft ein Fitnessstudio, ein Spa, Kino und sogar Ausflüge an Land gibt.
+
+Person A:
+Ich möchte unbedingt einen Ausflug in Athen machen – zur Akropolis! Und du?
+
+Person B:
+Ich möchte einen Tag am Strand in Spanien verbringen. Vielleicht in Barcelona. Und wir könnten auch eine Fahrradtour in Rom machen.
+
+Person A:
+Cool! Dann buchen wir ein paar Ausflüge vorher. Wir müssen auch an die Reiseversicherung denken – falls wir krank werden oder etwas passiert.
+
+Person B:
+Stimmt. Ich informiere mich über eine gute Versicherung. Außerdem schaue ich, welche Corona-Regeln auf dem Schiff gelten – ob wir Tests oder Masken brauchen.
+
+Person A:
+Sehr gut. Und wer kümmert sich um die Buchung? Willst du das übernehmen?
+
+Person B:
+Gerne! Ich suche morgen nach Angeboten für Mittelmeerkreuzfahrten mit 10 Tagen und mache dir dann zwei oder drei Vorschläge.
+
+Person A:
+Super! Ich freue mich riesig auf die Reise. Das wird ein echtes Abenteuer!
+
+Person B:
+Ich auch! Wir sollten viele Fotos machen und danach ein kleines Reisetagebuch gestalten.
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">9. Firmen-Olympiade organisieren</div>
+  <div class="szenario">
+    Sie möchten mit Ihren Kolleginnen und Kollegen eine Firmen-Olympiade planen.
+    <ul>
+      <li>Wo?</li>
+      <li>Wann?</li>
+      <li>Welche Sportarten?</li>
+      <li>Essen und Getränke</li>
+      <li>Kosten</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Also, ich finde die Idee mit der Firmen-Olympiade wirklich super! Endlich mal ein Tag, an dem wir Kollegen auch außerhalb der Arbeit gemeinsam etwas machen können.
+
+Person B:
+Ja, absolut! Das stärkt das Teamgefühl. Aber wir müssen alles gut planen, damit der Tag auch ein Erfolg wird. Fangen wir mit dem Ort an. Wo machen wir das?
+
+Person A:
+Ich würde vorschlagen, wir fragen beim Sportverein in der Nähe. Die haben einen großen Platz, eine Wiese und sogar Duschen. Da könnten wir alles machen.
+
+Person B:
+Gute Idee! Ich frage dort nach. Und wann passt es am besten? Ich denke, ein Samstag im Juni wäre ideal. Dann haben die meisten frei.
+
+Person A:
+Wie wäre es mit dem 22. Juni? Dann haben wir noch vier Wochen Zeit für die Vorbereitung. Das Wetter ist da meistens gut.
+
+Person B:
+Einverstanden. Jetzt zu den Sportarten: Wir brauchen einen Mix aus klassischen Disziplinen und lustigen Spielen. Ich denke an Staffellauf, Tauziehen, Volleyball und ein Sackhüpfen für den Spaß.
+
+Person A:
+Super Vorschlag! Ich bringe auch einen kleinen Parcours mit Hütchen und Bällen mit – für ein kleines Geschicklichkeitsspiel. Und wir machen Teams – vielleicht Abteilungen gegeneinander?
+
+Person B:
+Ja! Und das Siegerteam bekommt einen kleinen Preis – z. B. einen Pokal oder eine Urkunde. Jetzt zum Essen: Wollen wir grillen?
+
+Person A:
+Unbedingt! Ich kann einen Grill mitbringen, und wir machen ein Mitbringbuffet. Jeder bringt etwas Kleines mit: Salat, Brot, Gemüse, Saucen. Ich grille Würstchen.
+
+Person B:
+Ich kümmere mich um Getränke – Wasser, Apfelschorle, vielleicht ein paar Softdrinks. Wir brauchen auch Becher und Servietten.
+
+Person A:
+Ich schreibe eine Liste. Jetzt: Was kostet das Ganze? Wenn jeder fünf Euro mitbringt, können wir Getränke, Deko und kleine Preise finanzieren.
+
+Person B:
+Guter Plan. Ich sammle das Geld in der Woche vor dem Fest ein. Und falls es regnet?
+
+Person A:
+Wir brauchen auf jeden Fall eine Regenalternative. Vielleicht können wir die Halle vom Verein als Ausweichort benutzen – ich frage das gleich mit.
+
+Person B:
+Und Musik? Ich bringe meine Bluetooth-Box. Wir machen eine Playlist mit guter Laune-Musik.
+
+Person A:
+Ich freue mich schon richtig auf den Tag! Es wird sportlich, lustig und bringt alle näher zusammen.
+
+Person B:
+Ich auch! Ich mache heute noch ein Aushang mit Anmeldeliste und hänge ihn in der Firma auf. Und du kannst das Programm ausdrucken?
+
+Person A:
+Klar, mach ich! Dann haben wir alles im Blick. Firmen-Olympiade, wir kommen!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">10. Wanderung mit Freunden organisieren</div>
+  <div class="szenario">
+    Sie möchten mit Freunden eine Wanderung machen. Planen Sie gemeinsam.
+    <ul>
+      <li>Wohin wandern?</li>
+      <li>Wann?</li>
+      <li>Wen einladen?</li>
+      <li>Was mitbringen?</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Ich freue mich total, dass wir eine Wanderung mit unseren Freunden machen wollen. Das wird sicher ein schöner Tag in der Natur! Lass uns alles gemeinsam planen.
+
+Person B:
+Ja, ich habe richtig Lust auf frische Luft, Bewegung und gute Laune. Fangen wir mit der wichtigsten Frage an: Wohin wandern wir?
+
+Person A:
+Ich würde vorschlagen, wir gehen in den Wald bei Altenberg. Dort gibt es einen schönen Rundweg mit Aussichtspunkt und Picknickplatz.
+
+Person B:
+Gute Idee! Ich war da schon mal, das ist wirklich schön. Und die Strecke ist nicht zu schwer – auch für Leute, die nicht so sportlich sind.
+
+Person A:
+Genau. Jetzt zur Frage: Wann? Ich finde, ein Samstag ist ideal. Vielleicht in zwei Wochen – am 10. Mai?
+
+Person B:
+Passt gut! Ich schaue noch auf den Wetterbericht. Wenn’s regnet, verschieben wir. Wann wollen wir starten?
+
+Person A:
+Ich würde sagen: 9:30 Uhr am Bahnhof. Dann nehmen wir den Zug um 10 Uhr. Um 11 Uhr könnten wir loslaufen.
+
+Person B:
+Perfekt! Jetzt: Wen wollen wir einladen? Ich denke an 6–8 Personen – also unsere Freunde aus dem Sprachkurs und vielleicht auch ein paar Kollegen.
+
+Person A:
+Ja, aber keine zu große Gruppe. Ich schreibe heute eine WhatsApp-Nachricht und frage, wer Zeit und Lust hat.
+
+Person B:
+Sehr gut. Jetzt zur Verpflegung – was nehmen wir mit? Ich finde, jeder sollte sein eigenes Picknick mitbringen. Aber wir könnten auch etwas teilen.
+
+Person A:
+Ich bringe Obst, belegte Brote und eine Thermoskanne mit Tee. Und du?
+
+Person B:
+Ich mache einen kleinen Nudelsalat und nehme Wasser und Kekse mit. Außerdem ein paar Papierservietten und Mülltüten, damit wir alles sauber hinterlassen.
+
+Person A:
+Sehr gut. Und Kleidung – wir müssen allen sagen, dass sie bequeme Schuhe, eine Regenjacke und Sonnenschutz mitnehmen sollen.
+
+Person B:
+Stimmt. Ich schreibe das in die Nachricht. Und was machen wir unterwegs? Nur wandern, oder auch eine Pause mit kleinen Spielen?
+
+Person A:
+Ich bringe Karten mit – vielleicht machen wir ein kleines Ratespiel oder erzählen Witze. Wir müssen auch daran denken, genug Pausen zu machen.
+
+Person B:
+Ja, vielleicht alle 45 Minuten 10 Minuten Pause. Ich nehme auch ein kleines Erste-Hilfe-Set mit – man weiß ja nie.
+
+Person A:
+Super, dann sind wir gut vorbereitet! Ich freue mich schon – es wird eine tolle Wanderung mit netten Leuten und viel Natur!
+
+Person B:
+Ich auch! Ich mache eine Checkliste und du sendest die Einladung, okay?
+
+Person A:
+Abgemacht! Wanderschuhe an und los!
+</div>
+</div>
+
+<div class="thema-container">
+  <div class="thema-titel">11. Straßenfest organisieren</div>
+  <div class="szenario">
+    Sie und Ihre Nachbarin/Ihr Nachbar möchten ein Straßenfest organisieren.
+    <ul>
+      <li>Einladungen</li>
+      <li>Geeigneter Ort</li>
+      <li>Bänke, Tische</li>
+      <li>Essen, Getränke</li>
+      <li>Helferinnen und Helfer</li>
+      <li>…</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">Person A:
+Also, wir wollen ja ein Straßenfest organisieren – ich finde das richtig schön! Endlich mal wieder alle Nachbarn zusammenbringen, oder?
+
+Person B:
+Ja, das wird bestimmt toll! Ich freue mich schon drauf. Aber wir müssen gut planen, damit alles klappt. Fangen wir mit dem Datum an?
+
+Person A:
+Ich würde sagen, in drei Wochen an einem Samstag. Wie wäre der 15. Juni? Dann haben alle Zeit, sich vorzubereiten.
+
+Person B:
+Guter Vorschlag. Und wann genau? Vielleicht von 15 bis 21 Uhr?
+
+Person A:
+Ja, das reicht. Jetzt zum Ort: Ich finde, wir sollten das Fest direkt in unserer Straße machen – zwischen Hausnummer 12 und 20. Da ist genug Platz.
+
+Person B:
+Einverstanden. Ich frage beim Ordnungsamt, ob wir die Straße dafür sperren lassen dürfen. Jetzt zu den Einladungen – wer macht die?
+
+Person A:
+Ich kann die Einladungen gestalten – mit Datum, Uhrzeit, was jeder mitbringen soll. Wir werfen sie dann in alle Briefkästen.
+
+Person B:
+Super! Jetzt brauchen wir Bänke und Tische. Ich habe zwei Klapptische und ein paar Gartenstühle. Du?
+
+Person A:
+Ich habe auch einen Tisch und drei Bänke. Vielleicht fragen wir auch bei den Nachbarn, wer noch etwas hat.
+
+Person B:
+Gute Idee. Und beim Essen? Ich bin für ein Mitbringbuffet – jeder bringt etwas mit. Ich mache einen Nudelsalat und Muffins.
+
+Person A:
+Ich grille Würstchen und bringe Brot mit. Und was ist mit Getränken?
+
+Person B:
+Ich kaufe Wasser, Limo und ein bisschen Saft. Alkohol nur, wenn jemand explizit fragt. Wir sollten auch Becher und Servietten mitbringen.
+
+Person A:
+Genau. Jetzt brauchen wir noch Helferinnen und Helfer – zum Aufbauen, Abbauen und Saubermachen. Ich kann am Samstagmorgen ab 11 Uhr helfen.
+
+Person B:
+Ich auch. Ich schreibe eine Liste und frage im Haus, wer helfen kann. Und was ist mit Musik?
+
+Person A:
+Ich bringe meine Bluetooth-Box. Wir machen eine Playlist mit Sommermusik – nichts zu laut, damit man sich noch unterhalten kann.
+
+Person B:
+Perfekt. Für die Kinder könnten wir ein paar Spiele machen – Sackhüpfen, Dosenwerfen oder Kreide malen.
+
+Person A:
+Ich bringe ein paar alte Spiele mit. Und wir brauchen auch Müllsäcke und vielleicht ein kleines Zelt – für den Fall, dass es regnet.
+
+Person B:
+Ja, ich frage meinen Bruder – er hat ein Pavillon-Zelt. Ich denke, wir haben jetzt fast alles geplant!
+
+Person A:
+Super! Ich freue mich sehr – das wird ein schönes Fest für die ganze Nachbarschaft!
+</div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">12. Ein gesundes Frühstück in der Schule organisieren</div>
+  <div class="szenario">
+    In Ihrer Schule soll ein gesundes Frühstück organisiert werden. Sie möchten das gemeinsam mit jemandem vorbereiten.
+    <ul>
+      <li>Ziel: Warum machen wir das? (Gesundheit, Ernährung, Gemeinschaft)</li>
+      <li>Datum & Uhrzeit</li>
+      <li>Wo? (Klassenzimmer, Mensa, draußen?)</li>
+      <li>Was wird angeboten? (z. B. Obst, Vollkornbrot, Käse, Joghurt, Getränke)</li>
+      <li>Wer bringt was mit? (Aufgabenverteilung)</li>
+      <li>Dekoration, Geschirr</li>
+      <li>Regeln (kein Zucker, kein Müll, kein Stress)</li>
+      <li>Einladung oder Aushang?</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Also, ich habe gehört, dass wir in der Schule ein gesundes Frühstück organisieren dürfen. Ich finde das richtig gut! So können wir zeigen, wie lecker und einfach gesunde Ernährung sein kann.<br><br>
+    Person B:<br>
+    Ja, das ist eine tolle Idee. Und ich finde auch, dass wir das gemeinsam gut planen können. Gerade morgens essen viele Kinder zu wenig oder nur Süßes. Lass uns etwas Besseres anbieten.<br><br>
+    Person A:<br>
+    Genau. Ich würde vorschlagen, dass wir das Frühstück nächste Woche am Mittwoch machen. Da haben wir in der ersten Stunde Zeit, und wir können schon um 8:30 Uhr anfangen.<br><br>
+    Person B:<br>
+    Ja, Mittwoch passt gut. Und wo machen wir das? In unserem Klassenzimmer?<br><br>
+    Person A:<br>
+    Hm… Ich würde lieber die Mensa nehmen. Da haben wir mehr Platz und große Tische. Außerdem ist es hygienischer, wenn wir mit Essen arbeiten.<br><br>
+    Person B:<br>
+    Stimmt. Ich frage die Lehrerin, ob wir die Mensa reservieren können. Jetzt zum Essen: Ich finde, es sollten viele frische Sachen sein – also Obst, Gemüse, Vollkornbrot, Käse, vielleicht auch Joghurt.<br><br>
+    Person A:<br>
+    Ja! Ich kann einen großen Obstsalat machen – mit Äpfeln, Bananen, Trauben und etwas Zitronensaft. Und ich bringe Naturjoghurt mit, den wir dazu anbieten können.<br><br>
+    Person B:<br>
+    Super. Ich kümmere mich um Brot und Aufschnitt. Ich bringe Vollkornbrötchen, Butter, Käse und ein bisschen Frischkäse mit Kräutern mit. Vielleicht auch Tomaten und Gurken.<br><br>
+    Person A:<br>
+    Sehr gut! Und was machen wir mit Getränken? Ich finde, Wasser mit Zitrone oder Minze reicht. Keine Limonade, kein Saft – das ist zu süß.<br><br>
+    Person B:<br>
+    Einverstanden. Ich bringe Wasser und eine große Glaskaraffe. Und ein paar Becher. Vielleicht können wir auch Teebeutel anbieten – Kamillentee oder Früchtetee?<br><br>
+    Person A:<br>
+    Gute Idee! Ich nehme Teebeutel mit und einen Wasserkocher. Jetzt zur Deko: Wollen wir den Tisch ein bisschen schön machen?<br><br>
+    Person B:<br>
+    Ja, unbedingt! Ich bringe ein paar Stoffservietten, eine Tischdecke und vielleicht eine kleine Vase mit Blumen. Das macht gleich eine freundliche Atmosphäre.<br><br>
+    Person A:<br>
+    Und was ist mit Tellern und Besteck? Sollen wir Einwegprodukte nehmen?<br><br>
+    Person B:<br>
+    Lieber nicht – zu viel Müll. Ich bringe echte Teller und Löffel von zu Hause mit. Du auch ein paar?
+  </div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">13. Ein Umweltprojekt mit Kindern organisieren</div>
+  <div class="szenario">
+    Sie möchten mit einer Kindergruppe ein Projekt zum Thema Umweltschutz organisieren. Planen Sie gemeinsam, was Sie machen möchten und wie Sie die Kinder aktiv einbeziehen können.
+    <ul>
+      <li>Thema: Müllsammeln, Bäume pflanzen, Recycling, Upcycling</li>
+      <li>Zielgruppe: Alter der Kinder, Gruppengröße</li>
+      <li>Ort: Park, Schule, Stadtteil</li>
+      <li>Aktivitäten: basteln, sammeln, erklären, spielen</li>
+      <li>Materialien: Handschuhe, Müllsäcke, Schilder, Bastelmaterial</li>
+      <li>Unterstützung: Eltern, Schule, Stadt</li>
+      <li>Abschlussaktion: kleines Fest, Urkunde, Ausstellung</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Du, ich finde, wir sollten mit den Kindern aus unserer Gruppe ein Umweltprojekt machen. Das Thema ist wichtig – und Kinder lernen schnell, wenn sie etwas selbst machen dürfen.<br><br>
+    Person B:<br>
+    Das finde ich super! Wir zeigen den Kindern, wie sie die Natur schützen können – und haben gleichzeitig Spaß. Was sollen wir genau machen?<br><br>
+    Person A:<br>
+    Ich dachte an eine Müllsammelaktion im Park. Die Kinder bekommen Handschuhe und Müllsäcke und sammeln Papier, Plastik und Dosen. Danach sprechen wir über Recycling.<br><br>
+    Person B:<br>
+    Tolle Idee. Ich finde auch Upcycling spannend – also aus alten Sachen etwas Neues basteln. Vielleicht gestalten wir mit den Kindern kleine Blumentöpfe aus Dosen?<br><br>
+    Person A:<br>
+    Oh ja! So lernen sie spielerisch, wie man Müll vermeiden kann. Wollen wir das Projekt an einem Samstag machen? Dann haben auch Eltern Zeit, mitzuhelfen.<br><br>
+    Person B:<br>
+    Samstag passt gut. Vielleicht von 10 bis 14 Uhr? Erst sammeln, dann basteln, und zum Schluss machen wir ein kleines Picknick.<br><br>
+    Person A:<br>
+    Perfekt! Als Ort würde ich den Park am Stadtzentrum vorschlagen – da ist genug Platz und es gibt viel zu tun. Ich frage bei der Stadt, ob wir eine Genehmigung brauchen.<br><br>
+    Person B:<br>
+    Ich kümmere mich um das Material: Müllsäcke, Handschuhe in Kindergrößen, ein paar Klemmbretter für Fragen und Bastelmaterial für später. Vielleicht können wir auch alte T-Shirts bemalen?<br><br>
+    Person A:<br>
+    Klasse! Die T-Shirts könnten die Kinder beim Sammeln tragen. Das macht ihnen Spaß – und man erkennt gleich die Gruppe. Und was ist mit der Werbung?<br><br>
+    Person B:<br>
+    Ich mache ein kleines Plakat, das wir in der Schule aufhängen. Und wir geben den Kindern einen Elternbrief mit allen Infos. Vielleicht melden sich noch Geschwister an.<br><br>
+    Person A:<br>
+    Ja, und nach dem Projekt könnten wir eine kleine Ausstellung in der Schule machen – mit Fotos und den Bastelarbeiten. Und jedes Kind bekommt eine Urkunde.<br><br>
+    Person B:<br>
+    Das motiviert! Ich gestalte die Urkunde. Und sollen wir auch jemanden einladen – z. B. einen Mitarbeiter vom Umweltamt?<br><br>
+    Person A:<br>
+    Gute Idee. Vielleicht erklärt er den Kindern kurz, warum Umweltschutz wichtig ist. Dann wissen sie, dass ihre Arbeit zählt.<br><br>
+    Person B:<br>
+    Ich freue mich schon sehr. So ein Projekt bringt nicht nur Wissen, sondern auch Gemeinschaft. Ich glaube, das wird toll!<br><br>
+    Person A:<br>
+    Ja, und die Kinder werden noch lange davon erzählen. Ich mache eine Liste mit allen Aufgaben – und dann können wir starten!
+  </div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">14. Infostand über die deutsche Sprache beim Stadtfest</div>
+  <div class="szenario">
+    Beim Stadtfest in Ihrer Stadt soll ein Infostand über die deutsche Sprache angeboten werden. Sie helfen mit der Planung.
+    <ul>
+      <li>Ziel des Infostands (z. B. über Sprachkurse informieren, Interesse wecken)</li>
+      <li>Was zeigen wir? (Flyer, Plakate, Spiele, kleine Sprachübungen)</li>
+      <li>Wer steht wann am Stand? (Zeitplan, Pausen)</li>
+      <li>Aktionen? (Mini-Sprachtest, Mitmachspiel, Gewinnspiel)</li>
+      <li>Material und Ausstattung (Tisch, Deko, Laptop, Lautsprecher)</li>
+      <li>Werbung vorher (Plakate, Schule, Social Media)</li>
+      <li>Kontaktinfos geben (Anmeldung zum Kurs, Beratung)</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Also, wir sollen beim Stadtfest einen Infostand zur deutschen Sprache machen. Ich finde das eine super Idee! Viele Leute interessieren sich für Deutsch, wissen aber nicht, wo sie anfangen sollen.<br><br>
+    Person B:<br>
+    Stimmt. Mit dem Stand können wir zeigen, wie spannend Deutschlernen sein kann. Lass uns zusammen planen, was wir alles brauchen.<br><br>
+    Person A:<br>
+    Als Erstes: Was wollen wir am Stand zeigen? Ich denke, wir sollten Infos über unsere Deutschkurse anbieten – mit Flyern, Stundenplänen und Kontaktadressen.<br><br>
+    Person B:<br>
+    Ja, und wir könnten auch Plakate mit typischen deutschen Ausdrücken machen, z. B. „Wie geht’s?“ oder „Ich hätte gern…“ – vielleicht mit Übersetzung in mehreren Sprachen.<br><br>
+    Person A:<br>
+    Gute Idee! Dann fühlen sich auch Leute mit wenig Deutschkenntnissen angesprochen. Ich könnte auch mein Tablet mitbringen und kurze Videos zeigen – zum Beispiel, wie ein Unterricht aussieht.<br><br>
+    Person B:<br>
+    Super! Und wie wär’s mit einem kleinen Mitmachspiel? Zum Beispiel ein Mini-Sprachtest: Wer 5 Wörter richtig errät, bekommt ein kleines Geschenk – einen Stift oder Gummibärchen.<br><br>
+    Person A:<br>
+    Das motiviert bestimmt viele. Und vielleicht ein Glücksrad mit Fragen: z. B. „Was heißt Apfel auf Deutsch?“ – so lernen die Leute spielerisch.<br><br>
+    Person B:<br>
+    Perfekt! Ich kümmere mich um das Glücksrad. Jetzt zur Organisation: Wir brauchen einen Tisch, zwei Stühle, Plakate, Flyer, ein bisschen Deko – vielleicht in den Farben der deutschen Flagge?<br><br>
+    Person A:<br>
+    Ja! Ich bringe auch eine kleine Tischdecke mit. Und Musik? Vielleicht ein bisschen deutsche Popmusik im Hintergrund – nicht zu laut, aber freundlich.<br><br>
+    Person B:<br>
+    Gute Idee! Ich habe eine Bluetooth-Box, die ich mitbringen kann. Jetzt: Wer steht wann am Stand? Ich kann vormittags – von 10 bis 13 Uhr.<br><br>
+    Person A:<br>
+    Dann übernehme ich den Nachmittag – von 13 bis 16 Uhr. In der Pause springt vielleicht noch jemand aus unserem Kurs ein? Ich frage mal rum.<br><br>
+    Person B:<br>
+    Und wie machen wir Werbung? Ich würde vorschlagen: kleine Plakate in der Schule, an der Bushaltestelle, in der Bibliothek. Und wir posten es in der Schulgruppe auf WhatsApp.<br><br>
+    Person A:<br>
+    Ich mache den Text dafür. Und zum Schluss: Wir sollten ein Blatt vorbereiten, wo sich Leute eintragen können, wenn sie Interesse am Deutschkurs haben – mit Name und E-Mail.<br><br>
+    Person B:<br>
+    Stimmt! So können wir sie später informieren. Ich erstelle eine Liste. Ich glaube, das wird ein sehr schöner Infostand!<br><br>
+    Person A:<br>
+    Ich freue mich schon. Wir zeigen den Menschen, dass Deutschlernen Spaß macht!
+  </div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">15. Tag der offenen Tür im Sprachkurs organisieren</div>
+  <div class="szenario">
+    In Ihrem Deutschkurs soll ein Tag der offenen Tür organisiert werden. Sie möchten den Besuchern zeigen, wie der Unterricht abläuft und was man im Kurs lernen kann.
+    <ul>
+      <li>Termin und Uhrzeit</li>
+      <li>Ort (welcher Raum, wie viele Gäste?)</li>
+      <li>Programm: kurze Präsentation, Beispiel-Unterricht, Sprachspiele, Gespräche</li>
+      <li>Material: Plakate, Flyer, Musik, Fotos</li>
+      <li>Verpflegung: Kaffee, Tee, Kuchen</li>
+      <li>Wer übernimmt welche Aufgabe?</li>
+      <li>Einladung: Wer kommt? Wie wird eingeladen?</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Also, unsere Sprachschule plant einen Tag der offenen Tür, und unser Kurs soll auch etwas organisieren. Ich finde das toll! Da können wir zeigen, wie unser Deutschkurs aussieht.<br><br>
+    Person B:<br>
+    Ja, das ist eine super Gelegenheit. Wir könnten Menschen zeigen, dass man bei uns nicht nur Grammatik lernt, sondern auch viel spricht und Spaß hat. Lass uns alles gut planen.<br><br>
+    Person A:<br>
+    Fangen wir mit dem Termin an. Ich würde sagen, ein Samstagvormittag passt gut – zum Beispiel von 10 bis 13 Uhr. Dann können auch Berufstätige kommen.<br><br>
+    Person B:<br>
+    Einverstanden. Und in welchem Raum machen wir das? Unser Klassenzimmer reicht nicht, wenn viele Gäste kommen. Vielleicht der große Raum im Erdgeschoss?<br><br>
+    Person A:<br>
+    Ja, der ist perfekt. Ich frage gleich morgen, ob wir ihn reservieren können. Was machen wir mit dem Programm? Ich finde eine kurze Präsentation gut – 5 Minuten, wer wir sind, woher wir kommen, warum wir Deutsch lernen.<br><br>
+    Person B:<br>
+    Gute Idee! Danach könnten wir einen kleinen Beispiel-Unterricht machen. Vielleicht eine kurze Übung mit Artikeln oder ein Sprachspiel – wie ein Quiz oder ein Würfelspiel mit Fragen.<br><br>
+    Person A:<br>
+    Super! So sehen die Besucher, wie lebendig der Unterricht ist. Und wir könnten auch ein paar Plakate an die Wand hängen – mit Fotos vom Kurs, ein paar Lernregeln oder Vokabeln.<br><br>
+    Person B:<br>
+    Ich bastle ein Plakat mit Bildern vom Ausflug ins Museum und vom Weihnachtsfest. Und du?<br><br>
+    Person A:<br>
+    Ich mache ein Plakat mit typischen Redewendungen, die wir im Kurs gelernt haben. Außerdem könnten wir Kaffee und Kuchen anbieten – das macht alles freundlicher.<br><br>
+    Person B:<br>
+    Ja, ich bringe Muffins mit, und vielleicht ein paar Saftflaschen. Wir stellen eine kleine Kaffeestation auf einen Tisch. Und jeder bringt eine Tasse mit!<br><br>
+    Person A:<br>
+    Super! Jetzt zur Einladung: Wer soll kommen? Ich finde, Freunde, Familienmitglieder und Leute aus der Nachbarschaft.<br><br>
+    Person B:<br>
+    Genau. Wir können kleine Flyer drucken und in der Stadtbibliothek, im Supermarkt und im Rathaus aufhängen. Ich mache den Text, du das Design?<br><br>
+    Person A:<br>
+    Gerne! Und online posten wir es in der Facebook-Gruppe von der Schule. Ich kann das übernehmen. Wichtig ist auch: Wer macht was an dem Tag?<br><br>
+    Person B:<br>
+    Ich begrüße die Gäste am Eingang und erkläre das Programm. Du könntest den Beispiel-Unterricht moderieren.<br><br>
+    Person A:<br>
+    Abgemacht. Und zum Schluss – sollen wir einen kleinen Wettbewerb machen? Wer die meisten Wörter in 2 Minuten auf Deutsch sagt, gewinnt einen kleinen Preis?<br><br>
+    Person B:<br>
+    Super Idee! Das motiviert die Gäste und macht Spaß. Ich organisiere kleine Preise – Schokolade oder Stifte mit „Deutsch lernen“ drauf.<br><br>
+    Person A:<br>
+    Ich freue mich schon sehr! Ich glaube, das wird ein toller Tag – und vielleicht kommen danach neue Teilnehmer in unseren Kurs!<br><br>
+    Person B:<br>
+    Ganz bestimmt. Lass uns alles auf eine Liste schreiben und gleich anfangen!
+  </div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">16. 3-tägige Reise ans Meer mit dem Sprachkurs</div>
+  <div class="szenario">
+    Sie möchten mit einigen Teilnehmenden aus Ihrem Sprachkurs eine 3-tägige Reise ans Meer machen. Planen Sie gemeinsam den Aufenthalt der Gruppe.
+    <ul>
+      <li>Ziel: Wohin ans Meer?</li>
+      <li>Reisedatum (wann?)</li>
+      <li>Transportmittel (Bus, Bahn, Autos?)</li>
+      <li>Unterkunft (Hotel, Hostel, Ferienhaus?)</li>
+      <li>Programm vor Ort (Baden, Ausflug, Spiele, Grillen)</li>
+      <li>Verpflegung (selber kochen oder Restaurant?)</li>
+      <li>Kosten und Aufgabenverteilung (wer organisiert was?)</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Also, wir wollen mit einigen Leuten aus unserem Sprachkurs eine 3-tägige Reise ans Meer machen. Ich finde das eine super Idee! Wollen wir gemeinsam planen, wie wir das machen?<br><br>
+    Person B:<br>
+    Ja, ich freue mich total darauf! Es wäre schön, gemeinsam ein paar Tage zu entspannen. Fangen wir mit dem Ziel an – wohin wollen wir fahren?<br><br>
+    Person A:<br>
+    Ich schlage vor, dass wir an die Ostsee fahren. Zum Beispiel nach Usedom oder Rügen. Da gibt es schöne Strände und es ist nicht zu weit weg.<br><br>
+    Person B:<br>
+    Gute Idee. Rügen gefällt mir – da war ich schon mal. Dann brauchen wir ein Datum. Ich würde sagen, Anfang Juli, vielleicht vom Freitag bis Sonntag?<br><br>
+    Person A:<br>
+    Perfekt. So haben wir ein Wochenende, und niemand muss Urlaub nehmen. Und wie wollen wir reisen? Ich denke, mit dem Zug ist es bequem für alle.<br><br>
+    Person B:<br>
+    Ja, Zug ist gut. Wir können Gruppentickets kaufen, das wird günstiger. Ich kann mich darum kümmern und die Verbindung raussuchen.<br><br>
+    Person A:<br>
+    Super. Dann zur Unterkunft: Hotel ist wahrscheinlich zu teuer. Ich dachte eher an ein Ferienhaus oder ein Hostel mit Küche, damit wir auch mal selbst kochen können.<br><br>
+    Person B:<br>
+    Ein Ferienhaus finde ich gut. Dann sind wir alle zusammen und können auch abends gemeinsam essen oder Spiele spielen. Ich suche online nach freien Häusern für Gruppen.<br><br>
+    Person A:<br>
+    Prima. Und was wollen wir am Meer machen? Ich denke an Baden, Strandspiele, vielleicht eine kleine Fahrradtour oder eine Bootsfahrt.<br><br>
+    Person B:<br>
+    Das klingt gut! Ich bringe einen Ball mit, und vielleicht machen wir auch einen Grillabend, wenn das erlaubt ist. Ich frage mal nach, ob man draußen grillen darf.<br><br>
+    Person A:<br>
+    Gute Idee! Ich bringe dann Würstchen und Getränke mit. Was ist mit Frühstück und Mittagessen?<br><br>
+    Person B:<br>
+    Wir könnten am Morgen selbst frühstücken – Brötchen, Kaffee, Obst. Und mittags vielleicht ein Picknick am Strand. Abends gehen wir einmal ins Restaurant und einmal kochen wir selbst.<br><br>
+    Person A:<br>
+    Klingt nach einem guten Plan. Und wie sieht’s mit den Kosten aus? Ich denke, pro Person maximal 160 Euro für alles – Fahrt, Unterkunft und Essen.<br><br>
+    Person B:<br>
+    Ich rechne das mal grob durch. Wenn wir die Kosten vorher aufteilen, kann jeder schon früh genug bezahlen. Ich mache eine Liste, wer was übernimmt.<br><br>
+    Person A:<br>
+    Super! Ich schreibe eine Packliste – Badesachen, Sonnencreme, Handtuch…
+  </div>
+</div>
+<div class="thema-container">
+  <div class="thema-titel">17. Fremdsprachenlernen und warum es wichtig ist</div>
+  <div class="szenario">
+    Sie sind von einer Schule eingeladen worden, um über die Notwendigkeit des Fremdsprachenlernens aus Ihrer Sicht und Ihren Erfahrungen zu berichten. Sammeln Sie Argumente und machen Sie Ihrem Gesprächspartner Vorschläge.
+    <ul>
+      <li>Persönliche Erfahrungen mit Fremdsprachen</li>
+      <li>Gründe fürs Fremdsprachenlernen (Reisen, Beruf, Bildung, Kultur)</li>
+      <li>Vorteile im Alltag (Internet, Filme, Freundschaften)</li>
+      <li>Motivationstipps fürs Lernen</li>
+      <li>Welche Sprachen? Welche Methoden?</li>
+      <li>Tipps für junge Lernende</li>
+      <li>Abschluss: Warum lohnt sich das wirklich?</li>
+    </ul>
+  </div>
+  <button class="dialog-button">Beispieldialog anzeigen</button>
+  <div class="dialog">
+    Person A:<br>
+    Also, wir sollen eine Präsentation an einer Schule machen – über das Thema Fremdsprachenlernen. Ich finde das spannend! Wir erzählen einfach, warum Sprachen wichtig sind und was wir selbst erlebt haben.<br><br>
+    Person B:<br>
+    Ja, ich freue mich auch. Es ist eine gute Gelegenheit, jungen Menschen zu zeigen, dass Sprachen im Leben wirklich wichtig sind. Lass uns gemeinsam ein paar Punkte sammeln.<br><br>
+    Person A:<br>
+    Gerne! Wir könnten am Anfang erzählen, wie wir selbst mit Deutsch angefangen haben. Ich zum Beispiel musste am Anfang viele neue Wörter lernen, aber ich habe schnell gemerkt, dass es mir im Alltag hilft – z. B. beim Einkaufen oder beim Arzt.<br><br>
+    Person B:<br>
+    Genau! Ich erzähle, wie ich durch Deutsch neue Freunde gefunden habe und wie ich im Beruf besser kommunizieren kann. Sprache öffnet einfach Türen.<br><br>
+    Person A:<br>
+    Dann könnten wir erklären, warum Fremdsprachen wichtig sind. Zum Beispiel beim Reisen – man kann sich in anderen Ländern besser verständigen.<br><br>
+    Person B:<br>
+    Oder beim Arbeiten – viele Firmen suchen Leute, die mehrere Sprachen sprechen. Und auch im Internet – viele Inhalte sind auf Englisch oder Deutsch.<br><br>
+    Person A:<br>
+    Stimmt. Und in der Schule hilft eine Fremdsprache auch beim Lernen anderer Fächer – zum Beispiel bei Geschichte oder Geografie, wenn man Texte in anderen Sprachen liest.<br><br>
+    Person B:<br>
+    Wir sollten auch etwas zur Motivation sagen. Viele Schüler haben vielleicht keine Lust, Vokabeln zu lernen, aber wenn man Filme schaut, Musik hört oder mit Leuten spricht, macht das Lernen Spaß.<br><br>
+    Person A:<br>
+    Ja, oder wenn man ein Ziel hat: zum Beispiel im Ausland studieren oder reisen. Das motiviert. Und man kann auch Sprach-Apps benutzen – ich nutze z. B. Duolingo oder Quizlet.<br><br>
+    Person B:<br>
+    Gute Tipps! Wir können den Schülern empfehlen, jeden Tag nur 10 Minuten zu üben – das bringt schon viel. Und sie sollen keine Angst vor Fehlern haben!<br><br>
+    Person A:<br>
+    Dann könnten wir auch kurz zeigen, welche Sprachen wichtig sind. Natürlich Englisch, aber auch Deutsch, Spanisch, Französisch – je nachdem, was man später machen möchte.<br><br>
+    Person B:<br>
+    Und zum Schluss ein Fazit: Fremdsprachenlernen ist zwar manchmal anstrengend, aber es lohnt sich – man hat mehr Chancen im Leben und versteht andere Kulturen besser.<br><br>
+    Person A:<br>
+    Perfekter Schluss! Ich bin sicher, unsere Präsentation wird interessant – und vielleicht motivieren wir einige Schüler zum Lernen.
+  </div>
+</div>
+
+<h2 style="text-align: center; margin-top: 5rem; font-size: 2rem;">Hilfreiche Redemittel</h2>
+
+<div class="redemittel-container">
+
+<!-- Gespräch eröffnen / Vorschlag machen -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Gespräch eröffnen / Vorschlag machen</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Ich finde, wir sollten …</li>
+      <li>Was hältst du davon, wenn …?</li>
+      <li>Ich würde vorschlagen, dass …</li>
+      <li>Ich denke, es wäre schön, wenn …</li>
+      <li>Ich habe mir überlegt, dass …</li>
+      <li>Wollen wir vielleicht …?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Zustimmung ausdrücken -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Zustimmung ausdrücken</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Ja, das finde ich auch.</li>
+      <li>Gute Idee!</li>
+      <li>Das klingt super!</li>
+      <li>Ich bin ganz deiner Meinung.</li>
+      <li>Das passt für mich.</li>
+      <li>Perfekt, so machen wir das!</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Ablehnung / Bedenken äußern -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Ablehnung / Bedenken äußern</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Ich bin mir nicht sicher, ob das klappt.</li>
+      <li>Das finde ich nicht so gut.</li>
+      <li>Ich glaube, das ist zu kompliziert.</li>
+      <li>Das passt bei mir leider nicht.</li>
+      <li>Ich hätte da einen anderen Vorschlag.</li>
+      <li>Vielleicht sollten wir noch etwas anderes überlegen.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Nachfragen / Unsicherheit ausdrücken -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Nachfragen / Unsicherheit ausdrücken</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Wie meinst du das genau?</li>
+      <li>Kannst du das bitte noch mal erklären?</li>
+      <li>Was genau sollen wir dann machen?</li>
+      <li>Ich weiß nicht, ob ich das richtig verstanden habe.</li>
+      <li>Was ist, wenn das nicht klappt?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Entscheidung treffen / sich einigen -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Entscheidung treffen / sich einigen</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Also gut, dann machen wir das so.</li>
+      <li>Okay, ich bin einverstanden.</li>
+      <li>Dann entscheiden wir uns für …</li>
+      <li>Das klingt nach einem guten Plan.</li>
+      <li>Dann steht unser Plan jetzt fest.</li>
+      <li>So machen wir das!</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Gespräch beenden -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Gespräch beenden</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Dann ist ja alles geklärt.</li>
+      <li>Ich freue mich schon darauf!</li>
+      <li>Danke für das Gespräch!</li>
+      <li>Wir sehen uns dann …</li>
+      <li>Bis bald!</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Zustimmung mit Einschränkung -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Zustimmung mit Einschränkung</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Das stimmt, aber …</li>
+      <li>Ich sehe das ein bisschen anders.</li>
+      <li>Ja, aber man muss auch bedenken, dass …</li>
+      <li>Da hast du recht, trotzdem …</li>
+      <li>Grundsätzlich ja, aber …</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Vorschläge bewerten / vergleichen -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Vorschläge bewerten / vergleichen</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Das wäre eine Möglichkeit, aber …</li>
+      <li>Ich glaube, die andere Idee ist praktischer.</li>
+      <li>Wenn ich wählen müsste, würde ich … nehmen.</li>
+      <li>Ich finde beide Ideen gut, aber …</li>
+      <li>Was gefällt dir besser: … oder …?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Zeitvorschläge / planen -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Zeitvorschläge / planen</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Wie wäre es mit … Uhr?</li>
+      <li>Könnten wir uns am … treffen?</li>
+      <li>Hast du am Wochenende Zeit?</li>
+      <li>Ich schlage vor, dass wir uns nächsten … treffen.</li>
+      <li>Passt dir der … um … Uhr?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Aufgaben verteilen -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Aufgaben verteilen</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Ich könnte … übernehmen.</li>
+      <li>Wer möchte … machen?</li>
+      <li>Wollen wir die Aufgaben aufteilen?</li>
+      <li>Kannst du dich um … kümmern?</li>
+      <li>Dann mache ich das, und du …?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Rückmeldung geben -->
+<div class="redemittel-block">
+  <button class="redemittel-toggle">Rückmeldung geben</button>
+  <div class="redemittel-content">
+    <ul>
+      <li>Das klingt interessant.</li>
+      <li>Darüber habe ich noch nicht nachgedacht.</li>
+      <li>Gute Idee, das probieren wir!</li>
+      <li>Ich bin gespannt, ob das klappt.</li>
+      <li>Das sollten wir auf jeden Fall versuchen.</li>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+  // Dialog öffnen/schließen
+  document.querySelectorAll('.dialog-button').forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const dialog = document.querySelectorAll('.dialog')[index];
+      dialog.style.display = dialog.style.display === 'block' ? 'none' : 'block';
+      button.textContent = dialog.style.display === 'block'
+        ? 'Beispieldialog ausblenden'
+        : 'Beispieldialog anzeigen';
+    });
+  });
+
+  // Scroll-Effekt beim Einblenden
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.thema-container').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Redemittel aufklappen
+  document.querySelectorAll('.redemittel-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const expanded = content.style.display === 'block';
+      // Alle anderen Redemittel schließen
+      document.querySelectorAll('.redemittel-content').forEach(el => el.style.display = 'none');
+      // Das geklickte Element ein-/ausklappen
+      content.style.display = expanded ? 'none' : 'block';
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.thema-container').forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Dialog-Anzeige-Logik
+    document.querySelectorAll('.dialog-button').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const dialog = this.nextElementSibling;
+        if (dialog.style.display === 'block') {
+          dialog.style.display = 'none';
+        } else {
+          dialog.style.display = 'block';
+        }
+      });
+    });
+
+    // Redemittel-Toggle-Logik
+    document.querySelectorAll('.redemittel-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  });
+</script>
+<!-- GANZ AM ENDE der HTML-Datei -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Inhalte sichtbar machen
+    document.querySelectorAll('.thema-container').forEach(el => {
+      el.classList.add('visible');
+    });
+
+    // Dialog-Buttons
+    document.querySelectorAll('.dialog-button').forEach(button => {
+      button.addEventListener('click', function () {
+        const dialog = this.nextElementSibling;
+        dialog.style.display = (dialog.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+
+    // Redemittel-Toggles
+    document.querySelectorAll('.redemittel-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  });
+</script>
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
